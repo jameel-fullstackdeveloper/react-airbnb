@@ -1,4 +1,3 @@
-import React  from "react"
 import airbnblogo from "../images/logo.png"
 
 function Navbar () {
