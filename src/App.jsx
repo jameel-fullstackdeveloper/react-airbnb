@@ -21,20 +21,20 @@ function App() {
        <Card 
                 img="../images/katie-zaferes.png"
                 rating="5.0"
-                reviewCount={6}
+                reviewCount={30}
                 country="USA"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
+                title="Learn wedding photography"
+                price={125}
             />
        
 
        <Card 
                 img="../images/katie-zaferes.png"
-                rating="5.0"
-                reviewCount={6}
+                rating="4.8"
+                reviewCount={2}
                 country="USA"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
+                title="Group Mountain Biking"
+                price={50}
             />
 
 `       
