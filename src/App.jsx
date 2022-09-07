@@ -1,47 +1,34 @@
+import React from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import data from "./data"
 
-
-
-function App() {
-  return (
-    <div>
-        <Navbar />
-        <Hero />
-        
-        <Card img="../images/katie-zaferes.png"
-                rating="5.0"
-                reviewCount={6}
-                country="USA"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
+ function App() {
+          
+     
+    const cards = data.map(item => {
+        return (
+            <Card 
+                img={item.coverImg}
+                rating={item.stats.rating}
+                reviewCount={item.stats.reviewCount}
+                location={item.location}
+                title={item.title}
+                price={item.price}
             />
-       
-       <Card 
-                img="../images/katie-zaferes.png"
-                rating="5.0"
-                reviewCount={30}
-                country="USA"
-                title="Learn wedding photography"
-                price={125}
-            />
-       
-
-       <Card 
-                img="../images/katie-zaferes.png"
-                rating="4.8"
-                reviewCount={2}
-                country="USA"
-                title="Group Mountain Biking"
-                price={50}
-            />
-
-`       
-       
-       
-    </div>
-  )
+        )
+    })        
+    
+    return (
+        <div>
+            <Navbar />
+            <Hero />
+            <section className="cards-list">
+                {cards}
+            </section>
+        </div>
+    )
 }
 
-export default App
+export default App;
