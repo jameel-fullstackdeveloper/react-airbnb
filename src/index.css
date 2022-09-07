@@ -19,6 +19,10 @@ nav {
     color: #918E9B;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .logo {
     max-width: 100px;
 }
@@ -56,13 +60,16 @@ section{
 }
 
 .card {
-    width: 175px;
+    max-width: 175px;
     font-size: 12px;
+    display: inline-block;
+    padding:20px;
 }
 
 .card--image {
     width: 100%;
     border-radius: 9px;
+    margin-bottom: 10px;
 }
 
 .card--stats {
@@ -72,4 +79,6 @@ section{
 
 .card--star {
     height: 14px;
+    padding-right: 8px;
 }
+
