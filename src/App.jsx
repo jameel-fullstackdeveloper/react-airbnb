@@ -18,6 +18,7 @@ import data from "./data"
                 location={item.location}
                 title={item.title}
                 price={item.price}
+                openSpots={item.openSpots}
             />
       )
     })
