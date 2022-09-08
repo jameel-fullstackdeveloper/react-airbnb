@@ -8,8 +8,10 @@ import data from "./data"
           
      
     const cards = data.map(item => {
-        return (
+
+      return (
             <Card 
+                key={item.id}
                 img={item.coverImg}
                 rating={item.stats.rating}
                 reviewCount={item.stats.reviewCount}
@@ -17,8 +19,10 @@ import data from "./data"
                 title={item.title}
                 price={item.price}
             />
-        )
-    })        
+      )
+    })
+      
+        
     
     return (
         <div>
